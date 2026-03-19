@@ -5,7 +5,6 @@
     chosen {
         zmk,kscan = &kscan0;
         zmk,matrix-transform = &default_transform;
-        zmk,studio-unlock = &studio_unlock_behavior;
     };
 
     kscan0: kscan {
@@ -33,11 +32,5 @@
             5 6 7 8
             4 9 0xFFFFFFFF 0xFFFFFFFF
         >;
-    };
-
-    studio_unlock_behavior: studio_unlock_behavior {
-        compatible = "zmk,behavior-studio-unlock";
-        #binding-cells = <0>;
-        bindings = <&kp LSHFT &kp RSHFT>;
     };
 };
