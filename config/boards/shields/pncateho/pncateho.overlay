@@ -27,11 +27,11 @@
         compatible = "zmk,matrix-transform";
         columns = <4>;
         rows = <3>;
-        // map индексов: сначала 4 верхних, потом 4 нижних, потом 2 thumb
+        // map индексов: сначала 4 верхних, потом 4 нижних, потом 2 thumb, остальные ячейки пустые
         map = <
             0 1 2 3
             5 6 7 8
-            4 9 RC_NONE RC_NONE
+            4 9 0xFFFFFFFF 0xFFFFFFFF
         >;
     };
 
