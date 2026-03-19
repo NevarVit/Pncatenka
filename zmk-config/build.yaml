@@ -1,0 +1,4 @@
+# Файл: zmk-config/build.yaml
+include:
+  - board: nice_nano
+    shield: pncateho

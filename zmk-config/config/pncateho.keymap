@@ -1,0 +1,19 @@
+// Файл: zmk-config/config/pncateho.keymap
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/keys.h>
+
+/ {
+    keymap {
+        compatible = "zmk,keymap";
+        default_layer {
+            label = "DEFAULT";
+            // Порядок биндингов должен соответствовать порядку в map из matrix_transform:
+            // сначала 4 верхних, потом 4 нижних, потом 2 thumb
+            bindings = <
+                &kp B &kp F &kp T &kp J
+                &kp H &kp C &kp N &kp Y
+                &kp X &kp S
+            >;
+        };
+    };
+};
