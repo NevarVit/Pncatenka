@@ -1,4 +1,3 @@
-// Файл: zmk-config/config/pncateho.overlay
 #include <dt-bindings/zmk/matrix-transform.h>
 
 / {
