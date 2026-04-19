@@ -9,9 +9,36 @@
             // Порядок биндингов должен соответствовать порядку в map из matrix_transform:
             // сначала 4 верхних, потом 4 нижних, потом 2 thumb
             bindings = <
-                &kp B &kp F &kp T &kp J
-                &kp H &kp C &kp N &kp Y
-                &kp X &kp S
+                &kp LSHFT  &kp P   &kp A      &kp S
+                &kp V      &kp Z   &kp LALT   &kp SPACE
+                                   &mo 2      &mo 1
+            >;
+        };
+
+        other_layer {
+            label = "OTHER";
+            bindings = <
+                &kp TAB    &kp C    &kp W    &kp E
+                &kp U      &kp L    &kp H    &kp N
+                                    &mo 3    &none
+            >;
+        };
+
+        num_layer {
+            label = "NUM";
+            bindings = <
+                &kp N1   &kp N2   &kp N3   &kp N4
+                &kp N5   &none    &kp J    &kp X
+                                  &none    &none
+            >;
+        };
+            
+            func_layer {
+            label = "FUNC";
+            bindings = <
+                &kp F1    &kp F2    &studio_unlock   &kp LCTRL
+                &kp F3    &kp F4    &bootloader      &kp M
+                                    &none            &none
             >;
         };
     };
