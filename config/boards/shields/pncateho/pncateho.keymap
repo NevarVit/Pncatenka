@@ -33,7 +33,7 @@
             >;
         };
             
-            func_layer {
+        func_layer {
             label = "FUNC";
             bindings = <
                 &kp F1    &kp F2    &studio_unlock   &kp LCTRL
