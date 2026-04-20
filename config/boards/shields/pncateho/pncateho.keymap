@@ -9,13 +9,9 @@
         default_layer {
             display-name = "Default";
             bindings = <
-                // верхний ряд (0-3)
                 &kp Q    &kp W    &kp E    &kp R
-                // нижний ряд (4-7)
                 &kp A    &kp S    &kp D    &kp F
-                // большие клавиши (8-9)
                 &mo 2    &mo 1
-                // остальные позиции (10-19) – не используются
                 &none &none &none &none &none &none &none &none &none &none
             >;
         };
@@ -44,7 +40,7 @@
             display-name = "Functions";
             bindings = <
                 &kp F1 &kp F2 &kp F3 &kp F4
-                &bootloader &studio_unlock &none &none
+                &bootloader &none &none &none
                 &none &none
                 &none &none &none &none &none &none &none &none &none &none
             >;
