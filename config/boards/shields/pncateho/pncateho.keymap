@@ -7,7 +7,7 @@
     keymap {
         compatible = "zmk,keymap";
         default_layer {
-            label = "DEFAULT";
+            label = "Default";
             bindings = <
                 &kp LSHFT  &kp P   &kp A      &kp S        &none &none &none &none
                 &kp V      &kp Z   &kp LALT   &kp SPACE    &none &none &none &none
@@ -16,7 +16,7 @@
         };
 
         other_layer {
-            label = "OTHER";
+            label = "Other";
             bindings = <
                 &kp TAB    &kp C    &kp W    &kp E    &none &none &none &none
                 &kp U      &kp L    &kp H    &kp N    &none &none &none &none
@@ -25,7 +25,7 @@
         };
 
         num_layer {
-            label = "NUM";
+            label = "Numbers";
             bindings = <
                 &kp N1   &kp N2   &kp N3   &kp N4   &none &none &none &none
                 &kp N5   &none    &kp J    &kp X    &none &none &none &none
@@ -34,11 +34,11 @@
         };
             
         func_layer {
-            label = "FUNC";
+            label = "Functions";
             bindings = <
-                &kp F1    &kp F2    &studio_unlock   &kp LCTRL  &none &none &none &none
-                &kp F3    &kp F4    &bootloader      &kp M      &none &none &none &none
-                                    &none            &none      &none &none
+                &kp F1    &kp F2    &none        &kp LCTRL    &none &none &none &none
+                &kp F3    &kp F4    &bootloader  &kp M        &none &none &none &none
+                                    &none        &none        &none &none
             >;
         };
     };
