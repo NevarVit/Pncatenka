@@ -1,0 +1,6 @@
+if SHIELD_TRADEPAD
+
+config ZMK_KEYBOARD_NAME
+    default "TradePad"
+
+endif
