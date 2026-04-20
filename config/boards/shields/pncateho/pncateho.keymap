@@ -7,8 +7,6 @@
         compatible = "zmk,keymap";
         default_layer {
             label = "DEFAULT";
-            // Порядок биндингов должен соответствовать порядку в map из matrix_transform:
-            // сначала 4 верхних, потом 4 нижних, потом 2 thumb
             bindings = <
                 &kp LSHFT  &kp P   &kp A      &kp S
                 &kp V      &kp Z   &kp LALT   &kp SPACE
