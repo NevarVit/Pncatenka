@@ -11,6 +11,7 @@
     physical_layout0: physical_layout_0 {
         compatible = "zmk,physical-layout";
         display-name = "PNCATEHO";
+        transform = <&default_transform>;   // <--- добавлено обязательное свойство
         // Порядок ключей строго соответствует map из matrix_transform
         keys  //            w    h    x     y
             = <&key_physical_attrs 100 100    0    0>   // 0 (LSHIFT)
@@ -46,7 +47,6 @@
         compatible = "zmk,matrix-transform";
         columns = <4>;
         rows = <3>;
-        // Физические позиции (индексы) в порядке: 0,1,2,3,5,6,7,8,4,9
         map = <
             0 1 2 3
             5 6 7 8
