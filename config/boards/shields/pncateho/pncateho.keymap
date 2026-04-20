@@ -5,39 +5,48 @@
 / {
     keymap {
         compatible = "zmk,keymap";
+
         default_layer {
-            label = "DEFAULT";
+            display-name = "Default";
             bindings = <
-                &kp LSHFT  &kp P   &kp A      &kp S
-                &kp V      &kp Z   &kp LALT   &kp SPACE
-                                   &mo 2      &mo 1
+                // верхний ряд (0-3)
+                &kp Q    &kp W    &kp E    &kp R
+                // нижний ряд (4-7)
+                &kp A    &kp S    &kp D    &kp F
+                // большие клавиши (8-9)
+                &mo 2    &mo 1
+                // остальные позиции (10-19) – не используются
+                &none &none &none &none &none &none &none &none &none &none
             >;
         };
 
         other_layer {
-            label = "OTHER";
+            display-name = "Other";
             bindings = <
-                &kp TAB    &kp C    &kp W    &kp E
-                &kp U      &kp L    &kp H    &kp N
-                                    &mo 3    &none
+                &kp TAB    &kp LBRC &kp RBRC &kp BSLH
+                &kp Z      &kp X    &kp C    &kp V
+                &mo 3      &none
+                &none &none &none &none &none &none &none &none &none &none
             >;
         };
 
         num_layer {
-            label = "NUM";
+            display-name = "Numbers";
             bindings = <
-                &kp N1   &kp N2   &kp N3   &kp N4
-                &kp N5   &none    &kp J    &kp X
-                                  &none    &none
+                &kp N1 &kp N2 &kp N3 &kp N4
+                &kp N5 &kp N6 &kp N7 &kp N8
+                &none &none
+                &none &none &none &none &none &none &none &none &none &none
             >;
         };
-            
+
         func_layer {
-            label = "FUNC";
+            display-name = "Functions";
             bindings = <
-                &kp F1    &kp F2    &studio_unlock   &kp LCTRL
-                &kp F3    &kp F4    &bootloader      &kp M
-                                    &none            &none
+                &kp F1 &kp F2 &kp F3 &kp F4
+                &bootloader &studio_unlock &none &none
+                &none &none
+                &none &none &none &none &none &none &none &none &none &none
             >;
         };
     };
