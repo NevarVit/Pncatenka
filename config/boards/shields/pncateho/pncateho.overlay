@@ -5,26 +5,24 @@
     chosen {
         zmk,kscan = &kscan0;
         zmk,matrix-transform = &default_transform;
-        zmk,physical-layout = &pncateho_layout;
+        zmk,physical-layout = &physical_layout0;
     };
 
-    pncateho_layout: pncateho_layout {
+    physical_layout0: physical_layout_0 {
         compatible = "zmk,physical-layout";
-        display-name = "PNCATEHO Layout";
-        transform = <&default_transform>;
-        kscan = <&kscan0>;
-
-        keys  //             w   h   x    y
-            = <&key_physical_attrs 100 100    0    0>  // Pos0 (LSHIFT)
-            , <&key_physical_attrs 100 100  100    0>  // Pos1 (P)
-            , <&key_physical_attrs 100 100  200    0>  // Pos2 (A)
-            , <&key_physical_attrs 100 100  300    0>  // Pos3 (S)
-            , <&key_physical_attrs 100 100    0  100>  // Pos4 (MO2)
-            , <&key_physical_attrs 100 100    0  200>  // Pos5 (V)
-            , <&key_physical_attrs 100 100  100  200>  // Pos6 (Z)
-            , <&key_physical_attrs 100 100  200  200>  // Pos7 (LALT)
-            , <&key_physical_attrs 100 100  300  200>  // Pos8 (SPACE)
-            , <&key_physical_attrs 100 100  300  100>  // Pos9 (MO1)
+        display-name = "PNCATEHO";
+        // Порядок ключей строго соответствует map из matrix_transform
+        keys  //            w    h    x     y
+            = <&key_physical_attrs 100 100    0    0>   // 0 (LSHIFT)
+            , <&key_physical_attrs 100 100  100    0>   // 1 (P)
+            , <&key_physical_attrs 100 100  200    0>   // 2 (A)
+            , <&key_physical_attrs 100 100  300    0>   // 3 (S)
+            , <&key_physical_attrs 100 100    0  200>   // 5 (V)
+            , <&key_physical_attrs 100 100  100  200>   // 6 (Z)
+            , <&key_physical_attrs 100 100  200  200>   // 7 (LALT)
+            , <&key_physical_attrs 100 100  300  200>   // 8 (SPACE)
+            , <&key_physical_attrs 100 100    0  100>   // 4 (MO2)
+            , <&key_physical_attrs 100 100  300  100>   // 9 (MO1)
             ;
     };
 
@@ -48,6 +46,7 @@
         compatible = "zmk,matrix-transform";
         columns = <4>;
         rows = <3>;
+        // Физические позиции (индексы) в порядке: 0,1,2,3,5,6,7,8,4,9
         map = <
             0 1 2 3
             5 6 7 8
