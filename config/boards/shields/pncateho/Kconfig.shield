@@ -1,3 +1,2 @@
 config SHIELD_PNCATEHO
-    bool "PNCATEHO keyboard"
-    depends on DT_HAS_NICENANO_ENABLED
+    def_bool $(shields_list_contains,pncateho)
