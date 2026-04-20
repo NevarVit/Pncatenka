@@ -11,7 +11,7 @@
             bindings = <
                 &kp LSHFT  &kp P   &kp A      &kp S        &none &none &none &none
                 &kp V      &kp Z   &kp LALT   &kp SPACE    &none &none &none &none
-                                   &mo 2      &mo 1        &none &none &none &none
+                                   &mo 2      &mo 1        &none &none
             >;
         };
 
