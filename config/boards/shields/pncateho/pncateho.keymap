@@ -2,47 +2,43 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 
+
 / {
     keymap {
         compatible = "zmk,keymap";
-
         default_layer {
-            display-name = "Default";
+            label = "DEFAULT";
             bindings = <
-                &kp Q    &kp W    &kp E    &kp R
-                &kp A    &kp S    &kp D    &kp F
-                &mo 2    &mo 1
-                &none &none &none &none &none &none &none &none &none &none
+                &kp LSHFT  &kp P   &kp A      &kp S        &none &none &none &none
+                &kp V      &kp Z   &kp LALT   &kp SPACE    &none &none &none &none
+                                   &mo 2      &mo 1        &none &none &none &none
             >;
         };
 
         other_layer {
-            display-name = "Other";
+            label = "OTHER";
             bindings = <
-                &kp TAB    &kp LBRC &kp RBRC &kp BSLH
-                &kp Z      &kp X    &kp C    &kp V
-                &mo 3      &none
-                &none &none &none &none &none &none &none &none &none &none
+                &kp TAB    &kp C    &kp W    &kp E    &none &none &none &none
+                &kp U      &kp L    &kp H    &kp N    &none &none &none &none
+                                    &mo 3    &none    &none &none
             >;
         };
 
         num_layer {
-            display-name = "Numbers";
+            label = "NUM";
             bindings = <
-                &kp N1 &kp N2 &kp N3 &kp N4
-                &kp N5 &kp N6 &kp N7 &kp N8
-                &none &none
-                &none &none &none &none &none &none &none &none &none &none
+                &kp N1   &kp N2   &kp N3   &kp N4   &none &none &none &none
+                &kp N5   &none    &kp J    &kp X    &none &none &none &none
+                                  &none    &none    &none &none 
             >;
         };
-
+            
         func_layer {
-            display-name = "Functions";
+            label = "FUNC";
             bindings = <
-                &kp F1 &kp F2 &kp F3 &kp F4
-                &bootloader &none &none &none
-                &none &none
-                &none &none &none &none &none &none &none &none &none &none
+                &kp F1    &kp F2    &studio_unlock   &kp LCTRL  &none &none &none &none
+                &kp F3    &kp F4    &bootloader      &kp M      &none &none &none &none
+                                    &none            &none      &none &none
             >;
         };
     };
