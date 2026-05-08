@@ -7,13 +7,22 @@
 
 ---
 
+## 🔗 Репозитории
+
+Спасибо за интерес к проекту! Актуальные исходники и документация:
+
+- [aroum/PNCATEHO](https://github.com/aroum/PNCATEHO)
+- [turtle-bazon/zmk-PNCATEHO](https://github.com/turtle-bazon/zmk-PNCATEHO)
+- [aroum/zmk-PNCATEHO](https://github.com/aroum/zmk-PNCATEHO)
+
+---
+
 ## 🔧 Аппаратная основа
 
 - **Контроллер:** nice!nano v2 (nRF52840)
 - **Shield:** `pncateho`
 - **Матрица:** 3 ряда × 4 столбца (12 активных клавиш)
 - **Раскладка:** физически соответствует половине сплит‑клавиатуры (левая сторона)
-
 ---
 
 ## ⌨️ Слои и назначения
@@ -81,73 +90,3 @@
 
 ---
 
-## ⚙️ Файлы прошивки
-
-### `pncateho.keymap`
-```dts
-#include <behaviors.dtsi>
-#include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/bt.h>
-
-/ {
-    keymap {
-        compatible = "zmk,keymap";
-        default_layer {
-            label = "Default";
-            bindings = <
-                &kp LSHFT  &kp P   &kp LALT    &kp A        &none &none &none &none
-                &kp Z      &kp V   &kp N       &kp S        &none &none &none &none
-                                   &mo 2       &mo 1        &none &none
-            >;
-        };
-
-        other_layer {
-            label = "Other";
-            bindings = <
-                &kp TAB    &kp C    &kp LALT    &kp W    &none &none &none &none
-                &kp L      &kp U    &kp SPACE   &kp E    &none &none &none &none
-                                    &mo 3       &none    &none &none
-            >;
-        };
-
-        num_layer {
-            label = "Numbers";
-            bindings = <
-                &kp N1   &kp N2   &kp N3   &kp N4   &none &none &none &none
-                &kp F1   &kp F2   &kp F3   &kp N5   &none &none &none &none
-                                  &none    &kp X    &none &none 
-            >;
-        };
-
-        func_layer {
-            label = "Functions";
-            bindings = <
-                &none        &none   &none   &none        &none &none &none &none
-                &bootloader  &none   &none   &none        &none &none &none &none
-                                     &none   &none        &none &none
-            >;
-        };
-    };
-
-    combos {
-        compatible = "zmk,combos";
-
-        combo-ls-p-la {
-            bindings = <&kp M>;
-            key-positions = <0 1 2>;
-            layers = <0>;
-        };
-
-        combo-ctrl {
-            bindings = <&kp LCTRL>;
-            key-positions = <0 1 2>;
-            layers = <1>;
-        };
-
-        combo-f1-f2 {
-            bindings = <&kp F4>;
-            key-positions = <8 9>;
-            layers = <2>;
-        };
-    };
-};
