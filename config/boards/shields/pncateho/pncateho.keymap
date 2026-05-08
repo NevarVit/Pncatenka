@@ -48,10 +48,11 @@
         combo-ls-p-la {
             bindings = <&kp M>;
             key-positions = <0 1 2>;
+            layers = <0>
         };
 
         combo-ctrl {
-            bindings = <&kp L>;
+            bindings = <&kp LCTRL>;
             key-positions = <0 1 2>;
             layers = <1>;
         };
