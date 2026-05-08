@@ -9,18 +9,18 @@
         default_layer {
             label = "Default";
             bindings = <
-                &kp LSHFT  &kp P   &kp A      &kp S        &none &none &none &none
-                &kp V      &kp Z   &kp LALT   &kp SPACE    &none &none &none &none
-                                   &mo 2      &mo 1        &none &none
+                &kp LSHFT  &kp P   &kp LALT    &kp A        &none &none &none &none
+                &kp Z      &kp V   &kp N       &kp S        &none &none &none &none
+                                   &mo 2       &mo 1        &none &none
             >;
         };
 
         other_layer {
             label = "Other";
             bindings = <
-                &kp TAB    &kp C    &kp W    &kp E    &none &none &none &none
-                &kp U      &kp L    &kp H    &kp N    &none &none &none &none
-                                    &mo 3    &none    &none &none
+                &kp TAB    &kp C    &kp LALT    &kp W    &none &none &none &none
+                &none      &kp L    &kp SPACE   &kp E    &none &none &none &none
+                                    &mo 3       &none    &none &none
             >;
         };
 
@@ -28,17 +28,17 @@
             label = "Numbers";
             bindings = <
                 &kp N1   &kp N2   &kp N3   &kp N4   &none &none &none &none
-                &kp N5   &none    &kp J    &kp X    &none &none &none &none
-                                  &none    &none    &none &none 
+                &kp F1   &kp F2   &kp F3   &kp N5   &none &none &none &none
+                                  &none    &kp X    &none &none 
             >;
         };
             
         func_layer {
             label = "Functions";
             bindings = <
-                &kp F1    &kp F2    &none        &kp LCTRL    &none &none &none &none
-                &kp F3    &kp F4    &bootloader  &kp M        &none &none &none &none
-                                    &none        &none        &none &none
+                &none        &none   &none   &none        &none &none &none &none
+                &bootloader  &none   &none   &none        &none &none &none &none
+                                     &none   &none        &none &none
             >;
         };
     };
