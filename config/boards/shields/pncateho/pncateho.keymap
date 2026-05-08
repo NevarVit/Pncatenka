@@ -1,4 +1,4 @@
-#include <behaviors.dtsi>
+l#include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 
@@ -18,7 +18,7 @@
             label = "Other";
             bindings = <
                 &kp TAB    &kp C    &kp LALT    &kp W    &none &none &none &none
-                &none      &kp L    &kp SPACE   &kp E    &none &none &none &none
+                &kp L      &kp U    &kp SPACE   &kp E    &none &none &none &none
                                     &mo 3       &none    &none &none
             >;
         };
@@ -51,10 +51,10 @@
             key-positions = <0 1 2>;
         };
 
-        combo-z-v {
+        combo-ctrl {
             bindings = <&kp L>;
-            key-positions = <8 9>;
-            layers = <0>;
+            key-positions = <0 1 2>;
+            layers = <1>;
         };
 
         combo-f1-f2 {
