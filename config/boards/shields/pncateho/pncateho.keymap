@@ -48,7 +48,7 @@
         combo-ls-p-la {
             bindings = <&kp M>;
             key-positions = <0 1 2>;
-            layers = <0>
+            layers = <0>;
         };
 
         combo-ctrl {
