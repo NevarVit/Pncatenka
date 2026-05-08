@@ -1,0 +1,25 @@
+/ {
+    combos {
+        compatible = "zmk,combos";
+
+        // LSHFT + P + LALT -> M (глобально)
+        combo_lspa {
+            bindings = <&kp M>;
+            key-positions = <0 1 2>;
+        };
+
+        // Z + V -> L (только на слое 0)
+        combo_zv {
+            bindings = <&kp L>;
+            key-positions = <8 9>;
+            layers = <0>;  // default_layer
+        };
+
+        // F1 + F2 -> F4 (только на слое 2)
+        combo_f1f2 {
+            bindings = <&kp F4>;
+            key-positions = <8 9>;
+            layers = <2>;  // num_layer
+        };
+    };
+};
