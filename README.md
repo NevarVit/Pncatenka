@@ -1,7 +1,7 @@
 # 🧬 PNCATEHO — ZMK прошивка для скальперского терминала
 
 ![Раскладка PNCATEHO](https://github.com/user-attachments/assets/f5cda827-71fe-441a-a4eb-a7f94d850be7)
-<img width="532" height="1080" alt="Frame 1" src="https://github.com/user-attachments/assets/f5cda827-71fe-441a-a4eb-a7f94d850be7" />
+
 
 Персональная прошивка на базе [ZMK](https://zmk.dev/) для беспроводной клавиатуры на `nice!nano v2` (nRF52840).  
 Создана под конкретные задачи «Скальперского терминала» — быстрый ввод торговых команд, переключение окон и работа с функциями.
