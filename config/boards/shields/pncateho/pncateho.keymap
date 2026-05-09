@@ -51,7 +51,7 @@
             layers = <0>;
         };
         
-        combo-U {
+        combo-u {
             bindings = <&kp U>;
             key-positions = <8 9>;
             layers = <0>;
@@ -63,7 +63,7 @@
             layers = <1>;
         };
         
-        combo-J {
+        combo-j {
             bindings = <&kp J>;
             key-positions = <2 3>;
             layers = <2>;
