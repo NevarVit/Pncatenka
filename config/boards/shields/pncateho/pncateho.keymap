@@ -17,18 +17,18 @@
         other_layer {
             label = "Other";
             bindings = <
-                &kp TAB    &kp C    &kp LALT    &kp W    &none &none &none &none
-                &kp L      &kp U    &kp SPACE   &kp E    &none &none &none &none
-                                    &mo 3       &none    &none &none
+                &kp TAB    &kp C    &kp LALT    &kp W       &none &none &none &none
+                &kp H      &kp L    &kp SPACE   &kp E       &none &none &none &none
+                                    &mo 3       &none       &none &none
             >;
         };
 
         num_layer {
             label = "Numbers";
             bindings = <
-                &kp N1   &kp N2   &kp N3   &kp N4   &none &none &none &none
-                &kp F1   &kp F2   &kp F3   &kp N5   &none &none &none &none
-                                  &none    &kp X    &none &none 
+                &kp N1   &kp N2   &kp N3   &kp N4      &none &none &none &none
+                &kp F1   &kp F2   &kp F3   &kp N5      &none &none &none &none
+                                  &none    &kp X       &none &none 
             >;
         };
 
@@ -50,11 +50,29 @@
             key-positions = <0 1 2>;
             layers = <0>;
         };
+        
+        combo-U {
+            bindings = <&kp U>;
+            key-positions = <8 9>;
+            layers = <0>;
+        };
 
         combo-ctrl {
             bindings = <&kp LCTRL>;
             key-positions = <0 1 2>;
             layers = <1>;
+        };
+        
+        combo-J {
+            bindings = <&kp J>;
+            key-positions = <2 3>;
+            layers = <2>;
+        };
+
+        combo-esc {
+            bindings = <&kp ESC>;
+            key-positions = <0 1>;
+            layers = <2>;
         };
 
         combo-f1-f2 {
