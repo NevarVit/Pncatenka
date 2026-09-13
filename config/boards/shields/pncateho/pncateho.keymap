@@ -87,7 +87,7 @@
         };
 
         combo-n5 {
-            bindings = <&kp N4>;
+            bindings = <&kp N5>;
             key-positions = <1 2>;
             layers = <2>;
         };
