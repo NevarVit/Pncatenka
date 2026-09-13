@@ -26,8 +26,8 @@
         num_layer {
             label = "Numbers";
             bindings = <
-                &kp N1   &kp N2   &kp N3   &kp N4      &none &none &none &none
-                &kp F1   &kp F2   &kp F3   &kp N5      &none &none &none &none
+                &kp N1   &kp N2   &kp N3   &kp J       &none &none &none &none
+                &kp F1   &kp F2   &kp F3   &kp K       &none &none &none &none
                                   &none    &kp X       &none &none 
             >;
         };
@@ -57,27 +57,38 @@
             layers = <0>;
         };
 
+        combo-esc {
+            bindings = <&kp ESC>;
+            key-positions = <0 8>;
+            layers = <0>;
+        };
         combo-ctrl {
             bindings = <&kp LCTRL>;
             key-positions = <0 1 2>;
             layers = <1>;
         };
         
-        combo-j {
-            bindings = <&kp J>;
+        combo-q {
+            bindings = <&kp Q>;
             key-positions = <2 3>;
-            layers = <2>;
-        };
-
-        combo-esc {
-            bindings = <&kp ESC>;
-            key-positions = <0 1>;
             layers = <2>;
         };
 
         combo-f1-f2 {
             bindings = <&kp F4>;
             key-positions = <8 9>;
+            layers = <2>;
+        };
+
+        combo-n4 {
+            bindings = <&kp N4>;
+            key-positions = <0 1>;
+            layers = <2>;
+        };
+
+        combo-n5 {
+            bindings = <&kp N4>;
+            key-positions = <1 2>;
             layers = <2>;
         };
     };
